@@ -1,0 +1,11 @@
+<h2>To-do List</h2>
+<input [(ngModel)]="newTask" (keyup.enter)="addTask()" placeholder="Yangi vazifa qo‘shing">
+<button (click)="addTask()">Qo‘shish</button>
+
+<ul>
+  @for (task of tasks; track task) { 
+    <li>{{ task }} <button (click)="removeTask(task)">❌</button></li> 
+  }
+</ul>
+
+@if (tasks.length === 0) { <p>Hozircha vazifalar yo‘q!</p> }

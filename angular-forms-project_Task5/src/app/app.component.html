@@ -1,0 +1,9 @@
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label for="username">Username:</label>
+  <input type="text" id="username" formControlName="username">
+  <div *ngIf="userForm.get('username')?.invalid && userForm.get('username')?.touched">
+    <p>Username is required and must be at least 3 characters long!</p>
+  </div>
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>

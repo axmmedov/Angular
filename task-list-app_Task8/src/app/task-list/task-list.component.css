@@ -1,0 +1,24 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
