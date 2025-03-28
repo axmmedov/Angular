@@ -1,0 +1,115 @@
+/* Umumiy konteyner */
+.task-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Sarlavha */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Forma konteyneri */
+.task-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Kiritish maydoni */
+.task-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 70%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.task-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Tugmalar */
+.task-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Vazifalar ro‘yxati */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #e9ecef;
+}
+
+/* O‘chirish tugmasi */
+li button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+li button:hover {
+    background: #d93636;
+    transform: scale(1.1);
+}
+
+/* Mobil uchun moslashuv */
+@media (max-width: 480px) {
+    .task-form {
+        flex-direction: column;
+    }
+
+    .task-input {
+        width: 100%;
+    }
+
+    .task-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

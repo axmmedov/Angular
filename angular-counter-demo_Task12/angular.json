@@ -3,34 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "task-app": {
+    "angular-counter-demo_Task12": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:component": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:resolver": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -38,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/task-app",
+            "outputPath": "dist/angular-counter-demo-task12",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -56,7 +31,7 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "prerender": true,
+            "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
             }
@@ -89,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "task-app:build:production"
+              "buildTarget": "angular-counter-demo_Task12:build:production"
             },
             "development": {
-              "buildTarget": "task-app:build:development"
+              "buildTarget": "angular-counter-demo_Task12:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -124,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "246fcdd7-8f3d-41dd-b588-72b1cc46ea72"
+    "analytics": "595aa543-bbf1-4880-815b-e9b5363e2ad0"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "task-app",
+  "name": "angular-counter-demo-task12",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,11 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:task-app": "node dist/task-app/server/server.mjs"
+    "serve:ssr:angular-counter-demo_Task12": "node dist/angular-counter-demo-task12/server/server.mjs"
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^19.2.3",
+    "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
     "@angular/forms": "^19.2.0",
